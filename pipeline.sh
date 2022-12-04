@@ -17,3 +17,4 @@ module load sratoolkit
 ##config https://github.com/ncbi/sra-tools/wiki/03.-Quick-Toolkit-Configuration
 
 sbatch -a 1-12 download.sh
+sbatch -a 1-12 kallisto.sh
