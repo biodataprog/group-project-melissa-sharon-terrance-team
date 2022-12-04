@@ -1,0 +1,21 @@
+
+[build] loading fasta file mrna.fna.gz
+[build] k-mer length: 31
+[build] counting k-mers ... done.
+[build] building target de Bruijn graph ...  done 
+[build] creating equivalence classes ...  done
+[build] target de Bruijn graph has 54 contigs and contains 7255 k-mers 
+
+
+[quant] fragment length distribution is truncated gaussian with mean = 300, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 65
+[index] number of k-mers: 7,255
+[index] number of equivalence classes: 76
+[quant] running in single-end mode
+[quant] will process file 1: sra_data/SRR6077854_1.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 4,963,113 reads, 736,276 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 52 rounds
+

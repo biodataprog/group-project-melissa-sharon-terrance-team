@@ -1,0 +1,67 @@
+Loading parallel-fastq-dump/0.6.7
+  Loading requirement: sratoolkit/3.0.0
+2022-12-02 16:32:03,488 - SRR ids: ['SRR6077858']
+2022-12-02 16:32:03,489 - extra args: ['--split-files', '--gzip']
+2022-12-02 16:32:03,489 - tempdir: /scratch/xxu092/3136069/pfd_aymm3_il
+2022-12-02 16:32:03,489 - CMD: sra-stat --meta --quick SRR6077858
+2022-12-02 16:32:06,938 - SRR6077858 spots: 26941846
+2022-12-02 16:32:06,938 - blocks: [[1, 1683865], [1683866, 3367730], [3367731, 5051595], [5051596, 6735460], [6735461, 8419325], [8419326, 10103190], [10103191, 11787055], [11787056, 13470920], [13470921, 15154785], [15154786, 16838650], [16838651, 18522515], [18522516, 20206380], [20206381, 21890245], [21890246, 23574110], [23574111, 25257975], [25257976, 26941846]]
+2022-12-02 16:32:06,938 - CMD: fastq-dump -N 1 -X 1683865 -O /scratch/xxu092/3136069/pfd_aymm3_il/0 --split-files --gzip SRR6077858
+2022-12-02 16:32:06,942 - CMD: fastq-dump -N 1683866 -X 3367730 -O /scratch/xxu092/3136069/pfd_aymm3_il/1 --split-files --gzip SRR6077858
+2022-12-02 16:32:06,947 - CMD: fastq-dump -N 3367731 -X 5051595 -O /scratch/xxu092/3136069/pfd_aymm3_il/2 --split-files --gzip SRR6077858
+2022-12-02 16:32:06,954 - CMD: fastq-dump -N 5051596 -X 6735460 -O /scratch/xxu092/3136069/pfd_aymm3_il/3 --split-files --gzip SRR6077858
+2022-12-02 16:32:06,968 - CMD: fastq-dump -N 6735461 -X 8419325 -O /scratch/xxu092/3136069/pfd_aymm3_il/4 --split-files --gzip SRR6077858
+2022-12-02 16:32:06,981 - CMD: fastq-dump -N 8419326 -X 10103190 -O /scratch/xxu092/3136069/pfd_aymm3_il/5 --split-files --gzip SRR6077858
+2022-12-02 16:32:06,987 - CMD: fastq-dump -N 10103191 -X 11787055 -O /scratch/xxu092/3136069/pfd_aymm3_il/6 --split-files --gzip SRR6077858
+2022-12-02 16:32:06,991 - CMD: fastq-dump -N 11787056 -X 13470920 -O /scratch/xxu092/3136069/pfd_aymm3_il/7 --split-files --gzip SRR6077858
+2022-12-02 16:32:06,999 - CMD: fastq-dump -N 13470921 -X 15154785 -O /scratch/xxu092/3136069/pfd_aymm3_il/8 --split-files --gzip SRR6077858
+2022-12-02 16:32:07,002 - CMD: fastq-dump -N 15154786 -X 16838650 -O /scratch/xxu092/3136069/pfd_aymm3_il/9 --split-files --gzip SRR6077858
+2022-12-02 16:32:07,008 - CMD: fastq-dump -N 16838651 -X 18522515 -O /scratch/xxu092/3136069/pfd_aymm3_il/10 --split-files --gzip SRR6077858
+2022-12-02 16:32:07,012 - CMD: fastq-dump -N 18522516 -X 20206380 -O /scratch/xxu092/3136069/pfd_aymm3_il/11 --split-files --gzip SRR6077858
+2022-12-02 16:32:07,016 - CMD: fastq-dump -N 20206381 -X 21890245 -O /scratch/xxu092/3136069/pfd_aymm3_il/12 --split-files --gzip SRR6077858
+2022-12-02 16:32:07,022 - CMD: fastq-dump -N 21890246 -X 23574110 -O /scratch/xxu092/3136069/pfd_aymm3_il/13 --split-files --gzip SRR6077858
+2022-12-02 16:32:07,024 - CMD: fastq-dump -N 23574111 -X 25257975 -O /scratch/xxu092/3136069/pfd_aymm3_il/14 --split-files --gzip SRR6077858
+2022-12-02 16:32:07,028 - CMD: fastq-dump -N 25257976 -X 26941846 -O /scratch/xxu092/3136069/pfd_aymm3_il/15 --split-files --gzip SRR6077858
+Failed to call external services.
+Failed to call external services.
+Failed to call external services.
+Rejected 1683865 READS because READLEN < 1
+Read 1683865 spots for SRR6077858
+Written 1683865 spots for SRR6077858
+Rejected 1683871 READS because READLEN < 1
+Read 1683871 spots for SRR6077858
+Written 1683871 spots for SRR6077858
+Rejected 1683865 READS because READLEN < 1
+Read 1683865 spots for SRR6077858
+Written 1683865 spots for SRR6077858
+Rejected 1683865 READS because READLEN < 1
+Read 1683865 spots for SRR6077858
+Written 1683865 spots for SRR6077858
+Rejected 1683865 READS because READLEN < 1
+Read 1683865 spots for SRR6077858
+Written 1683865 spots for SRR6077858
+Rejected 1683865 READS because READLEN < 1
+Read 1683865 spots for SRR6077858
+Written 1683865 spots for SRR6077858
+Rejected 1683865 READS because READLEN < 1
+Read 1683865 spots for SRR6077858
+Written 1683865 spots for SRR6077858
+Rejected 1683865 READS because READLEN < 1
+Read 1683865 spots for SRR6077858
+Written 1683865 spots for SRR6077858
+Rejected 1683865 READS because READLEN < 1
+Read 1683865 spots for SRR6077858
+Written 1683865 spots for SRR6077858
+Rejected 1683865 READS because READLEN < 1
+Read 1683865 spots for SRR6077858
+Written 1683865 spots for SRR6077858
+Rejected 1683865 READS because READLEN < 1
+Read 1683865 spots for SRR6077858
+Written 1683865 spots for SRR6077858
+Rejected 1683865 READS because READLEN < 1
+Read 1683865 spots for SRR6077858
+Written 1683865 spots for SRR6077858
+Rejected 1683865 READS because READLEN < 1
+Read 1683865 spots for SRR6077858
+Written 1683865 spots for SRR6077858
+2022-12-02 16:33:54,050 - fastq-dump error! exit code: 64

@@ -1,0 +1,72 @@
+Loading parallel-fastq-dump/0.6.7
+  Loading requirement: sratoolkit/3.0.0
+2022-12-02 16:30:30,604 - SRR ids: ['SRR6077848']
+2022-12-02 16:30:30,604 - extra args: ['--split-files', '--gzip']
+2022-12-02 16:30:30,605 - tempdir: /scratch/xxu092/3136056/pfd_qyc14atb
+2022-12-02 16:30:30,605 - CMD: sra-stat --meta --quick SRR6077848
+2022-12-02 16:30:33,879 - SRR6077848 spots: 28963561
+2022-12-02 16:30:33,880 - blocks: [[1, 1810222], [1810223, 3620444], [3620445, 5430666], [5430667, 7240888], [7240889, 9051110], [9051111, 10861332], [10861333, 12671554], [12671555, 14481776], [14481777, 16291998], [16291999, 18102220], [18102221, 19912442], [19912443, 21722664], [21722665, 23532886], [23532887, 25343108], [25343109, 27153330], [27153331, 28963561]]
+2022-12-02 16:30:33,880 - CMD: fastq-dump -N 1 -X 1810222 -O /scratch/xxu092/3136056/pfd_qyc14atb/0 --split-files --gzip SRR6077848
+2022-12-02 16:30:33,916 - CMD: fastq-dump -N 1810223 -X 3620444 -O /scratch/xxu092/3136056/pfd_qyc14atb/1 --split-files --gzip SRR6077848
+2022-12-02 16:30:33,917 - CMD: fastq-dump -N 3620445 -X 5430666 -O /scratch/xxu092/3136056/pfd_qyc14atb/2 --split-files --gzip SRR6077848
+2022-12-02 16:30:33,919 - CMD: fastq-dump -N 5430667 -X 7240888 -O /scratch/xxu092/3136056/pfd_qyc14atb/3 --split-files --gzip SRR6077848
+2022-12-02 16:30:33,921 - CMD: fastq-dump -N 7240889 -X 9051110 -O /scratch/xxu092/3136056/pfd_qyc14atb/4 --split-files --gzip SRR6077848
+2022-12-02 16:30:33,923 - CMD: fastq-dump -N 9051111 -X 10861332 -O /scratch/xxu092/3136056/pfd_qyc14atb/5 --split-files --gzip SRR6077848
+2022-12-02 16:30:33,924 - CMD: fastq-dump -N 10861333 -X 12671554 -O /scratch/xxu092/3136056/pfd_qyc14atb/6 --split-files --gzip SRR6077848
+2022-12-02 16:30:33,926 - CMD: fastq-dump -N 12671555 -X 14481776 -O /scratch/xxu092/3136056/pfd_qyc14atb/7 --split-files --gzip SRR6077848
+2022-12-02 16:30:33,928 - CMD: fastq-dump -N 14481777 -X 16291998 -O /scratch/xxu092/3136056/pfd_qyc14atb/8 --split-files --gzip SRR6077848
+2022-12-02 16:30:33,929 - CMD: fastq-dump -N 16291999 -X 18102220 -O /scratch/xxu092/3136056/pfd_qyc14atb/9 --split-files --gzip SRR6077848
+2022-12-02 16:30:33,931 - CMD: fastq-dump -N 18102221 -X 19912442 -O /scratch/xxu092/3136056/pfd_qyc14atb/10 --split-files --gzip SRR6077848
+2022-12-02 16:30:33,933 - CMD: fastq-dump -N 19912443 -X 21722664 -O /scratch/xxu092/3136056/pfd_qyc14atb/11 --split-files --gzip SRR6077848
+2022-12-02 16:30:33,935 - CMD: fastq-dump -N 21722665 -X 23532886 -O /scratch/xxu092/3136056/pfd_qyc14atb/12 --split-files --gzip SRR6077848
+2022-12-02 16:30:33,937 - CMD: fastq-dump -N 23532887 -X 25343108 -O /scratch/xxu092/3136056/pfd_qyc14atb/13 --split-files --gzip SRR6077848
+2022-12-02 16:30:33,939 - CMD: fastq-dump -N 25343109 -X 27153330 -O /scratch/xxu092/3136056/pfd_qyc14atb/14 --split-files --gzip SRR6077848
+2022-12-02 16:30:33,941 - CMD: fastq-dump -N 27153331 -X 28963561 -O /scratch/xxu092/3136056/pfd_qyc14atb/15 --split-files --gzip SRR6077848
+Rejected 1810231 READS because READLEN < 1
+Read 1810231 spots for SRR6077848
+Written 1810231 spots for SRR6077848
+Rejected 1810222 READS because READLEN < 1
+Read 1810222 spots for SRR6077848
+Written 1810222 spots for SRR6077848
+Rejected 1810222 READS because READLEN < 1
+Read 1810222 spots for SRR6077848
+Written 1810222 spots for SRR6077848
+Rejected 1810222 READS because READLEN < 1
+Read 1810222 spots for SRR6077848
+Written 1810222 spots for SRR6077848
+Rejected 1810222 READS because READLEN < 1
+Read 1810222 spots for SRR6077848
+Written 1810222 spots for SRR6077848
+Rejected 1810222 READS because READLEN < 1
+Read 1810222 spots for SRR6077848
+Written 1810222 spots for SRR6077848
+Rejected 1810222 READS because READLEN < 1
+Read 1810222 spots for SRR6077848
+Written 1810222 spots for SRR6077848
+Rejected 1810222 READS because READLEN < 1
+Read 1810222 spots for SRR6077848
+Written 1810222 spots for SRR6077848
+Rejected 1810222 READS because READLEN < 1
+Read 1810222 spots for SRR6077848
+Written 1810222 spots for SRR6077848
+Rejected 1810222 READS because READLEN < 1
+Read 1810222 spots for SRR6077848
+Written 1810222 spots for SRR6077848
+Rejected 1810222 READS because READLEN < 1
+Read 1810222 spots for SRR6077848
+Written 1810222 spots for SRR6077848
+Rejected 1810222 READS because READLEN < 1
+Read 1810222 spots for SRR6077848
+Written 1810222 spots for SRR6077848
+Rejected 1810222 READS because READLEN < 1
+Read 1810222 spots for SRR6077848
+Written 1810222 spots for SRR6077848
+Rejected 1810222 READS because READLEN < 1
+Read 1810222 spots for SRR6077848
+Written 1810222 spots for SRR6077848
+Rejected 1810222 READS because READLEN < 1
+Read 1810222 spots for SRR6077848
+Written 1810222 spots for SRR6077848
+Rejected 1810222 READS because READLEN < 1
+Read 1810222 spots for SRR6077848
+Written 1810222 spots for SRR6077848
