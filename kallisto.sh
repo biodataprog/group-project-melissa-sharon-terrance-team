@@ -18,7 +18,7 @@ if [ -z $N ]; then
 fi
 
 IFS=,
-cat samplerun.csv | sed -n ${N}p | while read ACC GENO COND REP
+tail -n +2 samplerun.csv | sed -n ${N}p | while read ACC GENO COND REP
 do
  OUT=output/$GENO.$COND.$REP
  kallisto quant -t $CPU --single -l 300 -s 20 -i Rsphae.idx -o $OUT sra_data/${ACC}_1.fastq.gz
