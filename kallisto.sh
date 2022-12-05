@@ -17,6 +17,7 @@ if [ -z $N ]; then
  fi
 fi
 
+mkdir output
 IFS=,
 tail -n +2 samplerun.csv | sed -n ${N}p | while read ACC GENO COND REP
 do
