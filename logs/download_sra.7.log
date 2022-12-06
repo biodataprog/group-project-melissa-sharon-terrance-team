@@ -1,53 +1,26 @@
-Loading parallel-fastq-dump/0.6.7
-  Loading requirement: sratoolkit/3.0.0
-2022-12-02 16:32:03,461 - SRR ids: ['SRR6077854']
-2022-12-02 16:32:03,461 - extra args: ['--split-files', '--gzip']
-2022-12-02 16:32:03,461 - tempdir: /scratch/xxu092/3136065/pfd_xgsjz64c
-2022-12-02 16:32:03,461 - CMD: sra-stat --meta --quick SRR6077854
-2022-12-02 16:32:07,594 - SRR6077854 spots: 26469951
-2022-12-02 16:32:07,594 - blocks: [[1, 1654371], [1654372, 3308742], [3308743, 4963113], [4963114, 6617484], [6617485, 8271855], [8271856, 9926226], [9926227, 11580597], [11580598, 13234968], [13234969, 14889339], [14889340, 16543710], [16543711, 18198081], [18198082, 19852452], [19852453, 21506823], [21506824, 23161194], [23161195, 24815565], [24815566, 26469951]]
-2022-12-02 16:32:07,594 - CMD: fastq-dump -N 1 -X 1654371 -O /scratch/xxu092/3136065/pfd_xgsjz64c/0 --split-files --gzip SRR6077854
-2022-12-02 16:32:07,598 - CMD: fastq-dump -N 1654372 -X 3308742 -O /scratch/xxu092/3136065/pfd_xgsjz64c/1 --split-files --gzip SRR6077854
-2022-12-02 16:32:07,603 - CMD: fastq-dump -N 3308743 -X 4963113 -O /scratch/xxu092/3136065/pfd_xgsjz64c/2 --split-files --gzip SRR6077854
-2022-12-02 16:32:07,609 - CMD: fastq-dump -N 4963114 -X 6617484 -O /scratch/xxu092/3136065/pfd_xgsjz64c/3 --split-files --gzip SRR6077854
-2022-12-02 16:32:07,615 - CMD: fastq-dump -N 6617485 -X 8271855 -O /scratch/xxu092/3136065/pfd_xgsjz64c/4 --split-files --gzip SRR6077854
-2022-12-02 16:32:07,618 - CMD: fastq-dump -N 8271856 -X 9926226 -O /scratch/xxu092/3136065/pfd_xgsjz64c/5 --split-files --gzip SRR6077854
-2022-12-02 16:32:07,622 - CMD: fastq-dump -N 9926227 -X 11580597 -O /scratch/xxu092/3136065/pfd_xgsjz64c/6 --split-files --gzip SRR6077854
-2022-12-02 16:32:07,627 - CMD: fastq-dump -N 11580598 -X 13234968 -O /scratch/xxu092/3136065/pfd_xgsjz64c/7 --split-files --gzip SRR6077854
-2022-12-02 16:32:07,631 - CMD: fastq-dump -N 13234969 -X 14889339 -O /scratch/xxu092/3136065/pfd_xgsjz64c/8 --split-files --gzip SRR6077854
-2022-12-02 16:32:07,635 - CMD: fastq-dump -N 14889340 -X 16543710 -O /scratch/xxu092/3136065/pfd_xgsjz64c/9 --split-files --gzip SRR6077854
-2022-12-02 16:32:07,643 - CMD: fastq-dump -N 16543711 -X 18198081 -O /scratch/xxu092/3136065/pfd_xgsjz64c/10 --split-files --gzip SRR6077854
-2022-12-02 16:32:07,648 - CMD: fastq-dump -N 18198082 -X 19852452 -O /scratch/xxu092/3136065/pfd_xgsjz64c/11 --split-files --gzip SRR6077854
-2022-12-02 16:32:07,655 - CMD: fastq-dump -N 19852453 -X 21506823 -O /scratch/xxu092/3136065/pfd_xgsjz64c/12 --split-files --gzip SRR6077854
-2022-12-02 16:32:07,664 - CMD: fastq-dump -N 21506824 -X 23161194 -O /scratch/xxu092/3136065/pfd_xgsjz64c/13 --split-files --gzip SRR6077854
-2022-12-02 16:32:07,666 - CMD: fastq-dump -N 23161195 -X 24815565 -O /scratch/xxu092/3136065/pfd_xgsjz64c/14 --split-files --gzip SRR6077854
-2022-12-02 16:32:07,671 - CMD: fastq-dump -N 24815566 -X 26469951 -O /scratch/xxu092/3136065/pfd_xgsjz64c/15 --split-files --gzip SRR6077854
+Loading [1mparallel-fastq-dump/0.6.7[22m
+  [94mLoading requirement[0m: sratoolkit/3.0.0
+2022-12-05 15:53:05,857 - SRR ids: ['SRR6077854']
+2022-12-05 15:53:05,857 - extra args: ['--split-files', '--gzip']
+2022-12-05 15:53:05,858 - tempdir: /scratch/xxu092/3156517/pfd_azhl6hui
+2022-12-05 15:53:05,858 - CMD: sra-stat --meta --quick SRR6077854
+2022-12-05 15:53:09,609 - SRR6077854 spots: 26469951
+2022-12-05 15:53:09,609 - blocks: [[1, 1654371], [1654372, 3308742], [3308743, 4963113], [4963114, 6617484], [6617485, 8271855], [8271856, 9926226], [9926227, 11580597], [11580598, 13234968], [13234969, 14889339], [14889340, 16543710], [16543711, 18198081], [18198082, 19852452], [19852453, 21506823], [21506824, 23161194], [23161195, 24815565], [24815566, 26469951]]
+2022-12-05 15:53:09,609 - CMD: fastq-dump -N 1 -X 1654371 -O /scratch/xxu092/3156517/pfd_azhl6hui/0 --split-files --gzip SRR6077854
+2022-12-05 15:53:09,612 - CMD: fastq-dump -N 1654372 -X 3308742 -O /scratch/xxu092/3156517/pfd_azhl6hui/1 --split-files --gzip SRR6077854
+2022-12-05 15:53:09,624 - CMD: fastq-dump -N 3308743 -X 4963113 -O /scratch/xxu092/3156517/pfd_azhl6hui/2 --split-files --gzip SRR6077854
+2022-12-05 15:53:09,632 - CMD: fastq-dump -N 4963114 -X 6617484 -O /scratch/xxu092/3156517/pfd_azhl6hui/3 --split-files --gzip SRR6077854
+2022-12-05 15:53:09,640 - CMD: fastq-dump -N 6617485 -X 8271855 -O /scratch/xxu092/3156517/pfd_azhl6hui/4 --split-files --gzip SRR6077854
+2022-12-05 15:53:09,646 - CMD: fastq-dump -N 8271856 -X 9926226 -O /scratch/xxu092/3156517/pfd_azhl6hui/5 --split-files --gzip SRR6077854
+2022-12-05 15:53:09,652 - CMD: fastq-dump -N 9926227 -X 11580597 -O /scratch/xxu092/3156517/pfd_azhl6hui/6 --split-files --gzip SRR6077854
+2022-12-05 15:53:09,664 - CMD: fastq-dump -N 11580598 -X 13234968 -O /scratch/xxu092/3156517/pfd_azhl6hui/7 --split-files --gzip SRR6077854
+2022-12-05 15:53:09,670 - CMD: fastq-dump -N 13234969 -X 14889339 -O /scratch/xxu092/3156517/pfd_azhl6hui/8 --split-files --gzip SRR6077854
+2022-12-05 15:53:09,674 - CMD: fastq-dump -N 14889340 -X 16543710 -O /scratch/xxu092/3156517/pfd_azhl6hui/9 --split-files --gzip SRR6077854
+2022-12-05 15:53:09,677 - CMD: fastq-dump -N 16543711 -X 18198081 -O /scratch/xxu092/3156517/pfd_azhl6hui/10 --split-files --gzip SRR6077854
+2022-12-05 15:53:09,685 - CMD: fastq-dump -N 18198082 -X 19852452 -O /scratch/xxu092/3156517/pfd_azhl6hui/11 --split-files --gzip SRR6077854
+2022-12-05 15:53:09,693 - CMD: fastq-dump -N 19852453 -X 21506823 -O /scratch/xxu092/3156517/pfd_azhl6hui/12 --split-files --gzip SRR6077854
+2022-12-05 15:53:09,698 - CMD: fastq-dump -N 21506824 -X 23161194 -O /scratch/xxu092/3156517/pfd_azhl6hui/13 --split-files --gzip SRR6077854
+2022-12-05 15:53:09,706 - CMD: fastq-dump -N 23161195 -X 24815565 -O /scratch/xxu092/3156517/pfd_azhl6hui/14 --split-files --gzip SRR6077854
+2022-12-05 15:53:09,713 - CMD: fastq-dump -N 24815566 -X 26469951 -O /scratch/xxu092/3156517/pfd_azhl6hui/15 --split-files --gzip SRR6077854
 Failed to call external services.
-Failed to call external services.
-Failed to call external services.
-Failed to call external services.
-Rejected 1654386 READS because READLEN < 1
-Read 1654386 spots for SRR6077854
-Written 1654386 spots for SRR6077854
-Rejected 1654371 READS because READLEN < 1
-Read 1654371 spots for SRR6077854
-Written 1654371 spots for SRR6077854
-Rejected 1654371 READS because READLEN < 1
-Read 1654371 spots for SRR6077854
-Written 1654371 spots for SRR6077854
-Rejected 1654371 READS because READLEN < 1
-Read 1654371 spots for SRR6077854
-Written 1654371 spots for SRR6077854
-Rejected 1654371 READS because READLEN < 1
-Read 1654371 spots for SRR6077854
-Written 1654371 spots for SRR6077854
-Rejected 1654371 READS because READLEN < 1
-Read 1654371 spots for SRR6077854
-Written 1654371 spots for SRR6077854
-Rejected 1654371 READS because READLEN < 1
-Read 1654371 spots for SRR6077854
-Written 1654371 spots for SRR6077854
-Rejected 1654371 READS because READLEN < 1
-Read 1654371 spots for SRR6077854
-Written 1654371 spots for SRR6077854
-2022-12-02 16:33:53,730 - fastq-dump error! exit code: 64
+2022-12-05 15:54:10,579 - fastq-dump error! exit code: 64

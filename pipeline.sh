@@ -6,9 +6,9 @@ nano pipeline.sh
 
 
 ##download mrna.fasta of our species of interest, can use gzipped file for kallisto
-curl -o mrna.fna.gz https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/324/715/GCF_003324715.1_ASM332471v1/GCF_003324715.1_ASM332471v1_rna_from_genomic.fna.gz
+curl -o cds.fna.gz https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/324/715/GCF_003324715.1_ASM332471v1/GCF_003324715.1_ASM332471v1_cds_from_genomic.fna.gz
 
-zmore mrna.fna.gz 
+zmore cds.fna.gz 
 
 ##download our SRA data using a loop 
 

@@ -7,7 +7,7 @@ if [ $SLURM_CPUS_ON_NODE ]; then
 fi
 
 module load kallisto
-kallisto index -i Rsphae.idx  mrna.fna.gz
+kallisto index -i Rsphae.idx  cds.fna.gz
 N=${SLURM_ARRAY_TASK_ID}
 if [ -z $N ]; then
  N=$1

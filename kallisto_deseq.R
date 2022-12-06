@@ -40,17 +40,17 @@ dds <- dds[ rowSums(counts(dds)) > 1, ]
 nrow(dds)
 
 dds <- estimateSizeFactors(dds)
-rld <- rlog(dds, blind = TRUE)
+#rld <- rlog(dds, blind = TRUE)
 #vsd <- varianceStabilizingTransformation(dds, blind = FALSE, fitType = "parametric")
-#vsd <- vst(dds)
+vsd <- vst(dds, blind = FALSE)
 
-head(assay(rld), 3)
+head(assay(vsd), 3)
 
 df <- bind_rows(
-  as_tibble(log2(counts(dds, normalized=TRUE)[, 1:2]+1)) %>%
+  as_tibble(log2(counts(dds, normalized=FALSE)[, 1:2]+1)) %>%
     mutate(transformation = "log2(x + 1)"),
-  as_tibble(assay(rld)[, 1:2]) %>% mutate(transformation = "rlog"))
-  #as_tibble(assay(vsd)[, 1:2]) %>% mutate(transformation = "varianceStabilizingTransformation"))
+  #as_tibble(assay(rld)[, 1:2]) %>% mutate(transformation = "rlog"))
+  as_tibble(assay(vsd)[, 1:2]) %>% mutate(transformation = "vst"))
 
 colnames(df)[1:2] <- c("x", "y")
 
@@ -58,15 +58,15 @@ colnames(df)[1:2] <- c("x", "y")
 ggplot(df, aes(x = x, y = y)) + geom_hex(bins = 80) +
   coord_fixed() + facet_grid( . ~ transformation)
 
-select <- order(rowMeans(counts(dds,normalized=TRUE)),
+select <- order(rowMeans(counts(dds,normalized=FALSE)),
                 decreasing=TRUE)[1:30]
 df <- as.data.frame(colData(dds)[,c("condition","genotype")])
 #df <- as.data.frame(colData(dds)[,c("condition")])
-pheatmap(assay(rld)[select,], cluster_rows=FALSE, show_rownames=TRUE,cluster_cols=FALSE,annotation_col=sampleTable)
+pheatmap(assay(vsd)[select,], cluster_rows=FALSE, show_rownames=TRUE,cluster_cols=FALSE,annotation_col=sampleTable)
 
-sampleDists <- dist(t(assay(rld)))
+sampleDists <- dist(t(assay(vsd)))
 sampleDistMatrix <- as.matrix(sampleDists)
-rownames(sampleDistMatrix) <- paste(rld$condition, rld$genotype, sep="-")
+rownames(sampleDistMatrix) <- paste(vsd$condition, vsd$genotype, sep="-")
 #rownames(sampleDistMatrix) <- vsd$condition
 colnames(sampleDistMatrix) <- NULL
 colors <- colorRampPalette( rev(brewer.pal(9, "Blues")) )(255)
@@ -75,7 +75,7 @@ pheatmap(sampleDistMatrix,
          clustering_distance_cols=sampleDists,
          col=colors)
 
-pcaData <- plotPCA(rld, intgroup=c("condition", "genotype"), returnData=TRUE)
+pcaData <- plotPCA(vsd, intgroup=c("condition", "genotype"), returnData=TRUE)
 #pcaData <- plotPCA(vsd, intgroup=c("condition"), returnData=TRUE)
 percentVar <- round(100 * attr(pcaData, "percentVar"))
 

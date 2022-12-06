@@ -1,0 +1,13 @@
+{
+	"n_targets": 4423,
+	"n_bootstraps": 0,
+	"n_processed": 6028925,
+	"n_pseudoaligned": 403313,
+	"n_unique": 399106,
+	"p_pseudoaligned": 6.7,
+	"p_unique": 6.6,
+	"kallisto_version": "0.48.0",
+	"index_version": 10,
+	"start_time": "Mon Dec  5 16:15:57 2022",
+	"call": "kallisto quant -t 16 --single -l 300 -s 20 -i Rsphae.idx -o output/wt.32.2 sra_data/SRR6077849_1.fastq.gz"
+}
