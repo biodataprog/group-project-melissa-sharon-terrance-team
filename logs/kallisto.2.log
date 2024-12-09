@@ -1,0 +1,22 @@
+
+[build] loading fasta file cds.fna.gz
+[build] k-mer length: 31
+[build] counting k-mers ... done.
+[build] building target de Bruijn graph ...  done 
+[build] creating equivalence classes ...  done
+[build] target de Bruijn graph has 6263 contigs and contains 3895358 k-mers 
+
+mkdir: cannot create directory ‘output’: File exists
+
+[quant] fragment length distribution is truncated gaussian with mean = 300, sd = 20
+[index] k-mer length: 31
+[index] number of targets: 4,423
+[index] number of k-mers: 3,895,358
+[index] number of equivalence classes: 4,711
+[quant] running in single-end mode
+[quant] will process file 1: sra_data/SRR6077849_1.fastq.gz
+[quant] finding pseudoalignments for the reads ... done
+[quant] processed 6,028,925 reads, 403,313 reads pseudoaligned
+[   em] quantifying the abundances ... done
+[   em] the Expectation-Maximization algorithm ran for 83 rounds
+
