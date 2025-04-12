@@ -32,12 +32,7 @@ sampleTable$genotype <- factor(sampleTable$genotype)
 rownames(sampleTable) = samples$Name
 
 
-dds <- DESeqDataSetFromTximport(txi.kallisto,sampleTable,/
-                                ~ condition + genotype)
-
-
-
-
+dds <- DESeqDataSetFromTximport(txi.kallisto,sampleTable,~ condition + genotype)
 #dds <- DESeqDataSetFromTximport(txi.kallisto,sampleTable, ~ condition)
 
 nrow(dds)
@@ -45,13 +40,9 @@ dds <- dds[ rowSums(counts(dds)) > 1, ]
 nrow(dds)
 
 dds <- estimateSizeFactors(dds)
-vsd <- vst(dds, blind = FALSE)
-
-
-
 #rld <- rlog(dds, blind = TRUE)
 #vsd <- varianceStabilizingTransformation(dds, blind = FALSE, fitType = "parametric")
-
+vsd <- vst(dds, blind = FALSE)
 
 head(assay(vsd), 3)
 

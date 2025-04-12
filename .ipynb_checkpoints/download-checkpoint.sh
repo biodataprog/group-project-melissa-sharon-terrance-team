@@ -17,5 +17,4 @@ if [ ! -z $SLURM_ARRAY_TASK_ID ]; then
 	N=$SLURM_ARRAY_TASK_ID
 fi
 SRA=$(sed -n ${N}p sralist.tsv);
-parallel-fastq-dump -O $FOLDER  --threads $CPU /
---split-files --gzip --sra-id $SRA
+parallel-fastq-dump -O $FOLDER  --threads $CPU --split-files --gzip --sra-id $SRA
