@@ -1,0 +1,72 @@
+Loading [1mparallel-fastq-dump/0.6.7[22m
+  [94mLoading requirement[0m: sratoolkit/3.0.0
+2022-12-05 15:53:05,410 - SRR ids: ['SRR6077849']
+2022-12-05 15:53:05,410 - extra args: ['--split-files', '--gzip']
+2022-12-05 15:53:05,411 - tempdir: /scratch/xxu092/3156512/pfd_q404eunb
+2022-12-05 15:53:05,411 - CMD: sra-stat --meta --quick SRR6077849
+2022-12-05 15:53:08,008 - SRR6077849 spots: 6028925
+2022-12-05 15:53:08,008 - blocks: [[1, 376807], [376808, 753614], [753615, 1130421], [1130422, 1507228], [1507229, 1884035], [1884036, 2260842], [2260843, 2637649], [2637650, 3014456], [3014457, 3391263], [3391264, 3768070], [3768071, 4144877], [4144878, 4521684], [4521685, 4898491], [4898492, 5275298], [5275299, 5652105], [5652106, 6028925]]
+2022-12-05 15:53:08,008 - CMD: fastq-dump -N 1 -X 376807 -O /scratch/xxu092/3156512/pfd_q404eunb/0 --split-files --gzip SRR6077849
+2022-12-05 15:53:08,012 - CMD: fastq-dump -N 376808 -X 753614 -O /scratch/xxu092/3156512/pfd_q404eunb/1 --split-files --gzip SRR6077849
+2022-12-05 15:53:08,027 - CMD: fastq-dump -N 753615 -X 1130421 -O /scratch/xxu092/3156512/pfd_q404eunb/2 --split-files --gzip SRR6077849
+2022-12-05 15:53:08,034 - CMD: fastq-dump -N 1130422 -X 1507228 -O /scratch/xxu092/3156512/pfd_q404eunb/3 --split-files --gzip SRR6077849
+2022-12-05 15:53:08,043 - CMD: fastq-dump -N 1507229 -X 1884035 -O /scratch/xxu092/3156512/pfd_q404eunb/4 --split-files --gzip SRR6077849
+2022-12-05 15:53:08,051 - CMD: fastq-dump -N 1884036 -X 2260842 -O /scratch/xxu092/3156512/pfd_q404eunb/5 --split-files --gzip SRR6077849
+2022-12-05 15:53:08,055 - CMD: fastq-dump -N 2260843 -X 2637649 -O /scratch/xxu092/3156512/pfd_q404eunb/6 --split-files --gzip SRR6077849
+2022-12-05 15:53:08,059 - CMD: fastq-dump -N 2637650 -X 3014456 -O /scratch/xxu092/3156512/pfd_q404eunb/7 --split-files --gzip SRR6077849
+2022-12-05 15:53:08,063 - CMD: fastq-dump -N 3014457 -X 3391263 -O /scratch/xxu092/3156512/pfd_q404eunb/8 --split-files --gzip SRR6077849
+2022-12-05 15:53:08,066 - CMD: fastq-dump -N 3391264 -X 3768070 -O /scratch/xxu092/3156512/pfd_q404eunb/9 --split-files --gzip SRR6077849
+2022-12-05 15:53:08,069 - CMD: fastq-dump -N 3768071 -X 4144877 -O /scratch/xxu092/3156512/pfd_q404eunb/10 --split-files --gzip SRR6077849
+2022-12-05 15:53:08,076 - CMD: fastq-dump -N 4144878 -X 4521684 -O /scratch/xxu092/3156512/pfd_q404eunb/11 --split-files --gzip SRR6077849
+2022-12-05 15:53:08,081 - CMD: fastq-dump -N 4521685 -X 4898491 -O /scratch/xxu092/3156512/pfd_q404eunb/12 --split-files --gzip SRR6077849
+2022-12-05 15:53:08,089 - CMD: fastq-dump -N 4898492 -X 5275298 -O /scratch/xxu092/3156512/pfd_q404eunb/13 --split-files --gzip SRR6077849
+2022-12-05 15:53:08,093 - CMD: fastq-dump -N 5275299 -X 5652105 -O /scratch/xxu092/3156512/pfd_q404eunb/14 --split-files --gzip SRR6077849
+2022-12-05 15:53:08,096 - CMD: fastq-dump -N 5652106 -X 6028925 -O /scratch/xxu092/3156512/pfd_q404eunb/15 --split-files --gzip SRR6077849
+Rejected 376807 READS because READLEN < 1
+Read 376807 spots for SRR6077849
+Written 376807 spots for SRR6077849
+Rejected 376807 READS because READLEN < 1
+Read 376807 spots for SRR6077849
+Written 376807 spots for SRR6077849
+Rejected 376807 READS because READLEN < 1
+Read 376807 spots for SRR6077849
+Written 376807 spots for SRR6077849
+Rejected 376807 READS because READLEN < 1
+Read 376807 spots for SRR6077849
+Written 376807 spots for SRR6077849
+Rejected 376807 READS because READLEN < 1
+Read 376807 spots for SRR6077849
+Written 376807 spots for SRR6077849
+Rejected 376807 READS because READLEN < 1
+Read 376807 spots for SRR6077849
+Written 376807 spots for SRR6077849
+Rejected 376807 READS because READLEN < 1
+Read 376807 spots for SRR6077849
+Written 376807 spots for SRR6077849
+Rejected 376807 READS because READLEN < 1
+Read 376807 spots for SRR6077849
+Written 376807 spots for SRR6077849
+Rejected 376807 READS because READLEN < 1
+Read 376807 spots for SRR6077849
+Written 376807 spots for SRR6077849
+Rejected 376807 READS because READLEN < 1
+Read 376807 spots for SRR6077849
+Written 376807 spots for SRR6077849
+Rejected 376807 READS because READLEN < 1
+Read 376807 spots for SRR6077849
+Written 376807 spots for SRR6077849
+Rejected 376820 READS because READLEN < 1
+Read 376820 spots for SRR6077849
+Written 376820 spots for SRR6077849
+Rejected 376807 READS because READLEN < 1
+Read 376807 spots for SRR6077849
+Written 376807 spots for SRR6077849
+Rejected 376807 READS because READLEN < 1
+Read 376807 spots for SRR6077849
+Written 376807 spots for SRR6077849
+Rejected 376807 READS because READLEN < 1
+Read 376807 spots for SRR6077849
+Written 376807 spots for SRR6077849
+Rejected 376807 READS because READLEN < 1
+Read 376807 spots for SRR6077849
+Written 376807 spots for SRR6077849
